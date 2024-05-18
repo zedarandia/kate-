@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine's Day Message</title>
+  <style>
+    body {
+      background-color: #ADD8E6; /* Baby blue */
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFFFFF; /* White */
+      font-size: 36px;
+      margin-top: 100px;
+    }
+
+    p {
+      color: black;
+      font-size: 24px;
+      margin-top: 50px;
+    }
+
+    button {
+      background-color: #87CEEB; /* Baby blue */
+      color: #FFFFFF; /* White */
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+
+    button:hover {
+      background-color: #6495ED; /* Cornflower blue */
+    }
+  </style>
+</head>
+<body>
+  <p>Hi, Kate</p>
+  <p>I know this is not my best version, i really do hope you're doing okay. I love you the same way, I'm just in a lot of pressure the past few weeks. I really miss you, i miss us. Thank you for understanding me despite everything i've said to you earlier. MWA MWA bati na tayo please?</p>
+  <p>I love you forever bruh<3</p>
+
+  <img src="gif/kate.jpg" alt="ok">
+  <img src="gif/kate2.jpg" alt="ok">
+
+  <div class="music">
+    <button onclick="playAudio()">Play Audio</button>
+  </div>
+
+  <div class="centeraudio">
+    <audio id="myAudio" controls>
+      <source src="mp3/kiss.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    function playAudio() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>

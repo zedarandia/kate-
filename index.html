@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>US</title>
+  
+  <style>  
+    body {
+      background-color: #ADD8E6; /* Baby blue */
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFFFFF; /* White */
+      font-size: 36px;
+      margin-top: 100px;
+    }
+
+    p {
+      color: #87CEEB; /* Baby blue */
+      font-size: 24px;
+      margin-top: 50px;
+    }
+
+    button {
+      background-color: #87CEEB; /* Baby blue */
+      color: #FFFFFF; /* White */
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+
+    button:hover {
+      background-color: #6495ED; /* Cornflower blue */
+    }
+  </style>
+</head>
+<body>
+  <h1>Bati na ba tayo?</h1>
+  <button id="yesButton">Yes</button>
+  <button id="noButton">Ayaw, haha di naman gumagana yung button na 'to</button>
+  
+
+
+  <script>
+    const yesButton = document.getElementById("yesButton");
+    const noButton = document.getElementById("noButton");
+
+    yesButton.addEventListener("click", openNewPage);
+
+    noButton.addEventListener("click", function() {
+      alert("Haha, bakit di mo na ako mahal siraulo ka ba dati!");
+    });
+
+    function openNewPage() {
+      console.log("openNewPage function called");
+      window.open("Kate.html", "_blank");
+    }
+  </script>
+</body>
+</html>
+
